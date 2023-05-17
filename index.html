@@ -2,22 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>My Page</title>
+        <link rel="stylesheet" href="main.css">
+        <title>RPS project</title>
     </head>
     <body>
+        <h1>Please choose one</h1>
         <div class="gamediv">
-            <h1 class="gameText" id="playerText">PlayerScore:</h1>
-            <h1 class="gameText" id="computerText">ComputerScore:</h1>
-            <h1 class="gameText" id="resultText">Result:</h1>
-
-
-            <button class="choiceBtn">ROCK</button>
-            <button class=choiceBtn>PAPER</button>
-            <button class="choiceBtn">SCISSORS</button>
+            <img src="rock.png" class="game-img" id="rock" alt="Rock image">
+            <img src="paper.png" class="game-img" id="paper" alt="Paper image">
+            <img src="scissors.png" class="game-img" id="scissors" alt="Scissors image">
         </div>
-        
-        <script src="practice.js">
-            
-        </script>
+        <div class="Scores">
+            <div>Player Score =&nbsp;<span class="playerscore"></span></div>
+            <div>Computer Score =&nbsp;<span class="computerscore"></span></div>
+        </div>
+        <div class="Result">
+            <div>Result =&nbsp;<span class="result"></span></div>
+        </div>
+        <script src="rps.js"></script>
     </body>
 </html>
